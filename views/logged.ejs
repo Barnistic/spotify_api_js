@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="onPageLoad()">
+    <div class="cover" id="cover">
+        <div class="toggle">
+            <div class="singles">
+                <button id="singles-btn" class="singles-btn" onclick="getSongs()">
+                    Top Songs
+                </button>
+            </div>
+            <div class="artists">
+                <button id="artists-btn" class="artists-btn" onclick="getArtists()">
+                    Top Artists
+                </button>
+            </div>
+        </div>
+        <div id="API" class="API">
+            <div class="list">
+                <ol id="list" class="results">
+
+                </ol>
+            </div>
+        </div>
+    </div>
+    <script src="../main2.js"></script>
+</body>
+</html>
