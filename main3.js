@@ -61,10 +61,14 @@ app.get('/callback', (req, res) => {
             const expirationTimeMilliseconds = currentTimeMilliseconds + (tokenExpiresInSeconds * 1000);
             
             req.session.expires_at = expirationTimeMilliseconds;
-            res.redirect('/views/logged');
+            res.redirect('/logged');
         });
     }
 });
+
+app.get('/logged', (req, res) => {
+    res.sendFile(__dirname + "/views/logged.html")
+})
 
 app.listen(5000, () => {
     console.log('Server is running on port 5000');
