@@ -69,51 +69,6 @@ app.get('/callback', (req, res) => {
             session.expires_at = expirationTimeMilliseconds;
             res.redirect('/logged');
         });
-
-        /*var authOptions = {
-            url: 'https://accounts.spotify.com/api/token',
-            form: {
-              code: req.query.code,
-              redirect_uri: REDIRECT_URI,
-              grant_type: 'authorization_code'
-            },
-            headers: {
-              'content-type': 'application/x-www-form-urlencoded',
-              Authorization: 'Basic ' + (new Buffer.from(CLIENT_ID + ':' + CLIENT_SECRET).toString('base64'))
-            },
-            json: true
-          };
-      
-        request.post(authOptions, function (error, response, body) {
-        if (!error && response.statusCode === 200) {
-    
-            var access_token = body.access_token,
-                refresh_token = body.refresh_token;
-    
-            var options = {
-                url: 'https://api.spotify.com/v1/me',
-                headers: { 'Authorization': 'Bearer ' + access_token },
-                json: true
-            };
-    
-            // use the access token to access the Spotify Web API
-            request.get(options, function(error, response, body) {
-                console.log(body);
-            });
-    
-            // we can also pass the token to the browser to make requests from there
-            res.redirect('/#' +
-            querystring.stringify({
-                access_token: access_token,
-                refresh_token: refresh_token
-            }));
-        } else {
-            res.redirect('/#' +
-            querystring.stringify({
-                error: 'invalid_token'
-            }));
-        }
-        });*/
     }
 });
 
