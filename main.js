@@ -2,13 +2,14 @@ const express = require('express');
 const session = require('express-session');
 const querystring = require('querystring');
 const request = require('request');
+require('dotenv').config();
 
 const app = express();
 const port = 5000;
 
 const CLIENT_ID = 'ac741c3507aa4edc81755b589eef91e4';
-const CLIENT_SECRET = 'a27b89cc9ecc476ba75a6d939f0f115c';
 const REDIRECT_URI = 'http://localhost:' + port + '/callback';
+const CLIENT_SECRET = process.env.secretKey;
 
 const AUTH_URL = 'https://accounts.spotify.com/authorize';
 const TOKEN_URL = 'https://accounts.spotify.com/api/token';
@@ -47,8 +48,6 @@ app.get('/callback', (req, res) => {
             code: req.query.code,
             grant_type: 'authorization_code',
             redirect_uri: REDIRECT_URI,
-            //client_id: CLIENT_ID,
-            //client_secret: CLIENT_SECRET,
         };
 
         const reqHeader = {
