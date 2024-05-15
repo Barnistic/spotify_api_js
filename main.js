@@ -21,6 +21,8 @@ app.use(session({
     saveUninitialized: true
 }));
 
+app.use(express.static(__dirname));
+
 app.get('/', (req, res) =>{
     res.send("Welcome to my Spotify app <a href='/login'>Login with Spotify</a>");
 });
@@ -80,7 +82,7 @@ app.listen(5000, () => {
 });
 
 app.get('/getSongs', (req, res) => {
-    var type = "artists";
+    var type = "tracks";
     var apiUrl = API_BASE_URL + "me/top/" + type;
 
     request.get({
@@ -96,4 +98,3 @@ app.get('/getSongs', (req, res) => {
         }
     })
 });
-

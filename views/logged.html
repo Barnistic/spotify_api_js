@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../client.js"></script>
 </head>
 <body>
     <h1>Spotify stats</h1>
     <div class="cover" id="cover">
         <div class="toggle">
             <div class="singles">
-                <button id="singles-btn" class="singles-btn" onclick="window.location.href='/getSongs'">
+                <button id="singles-btn" class="singles-btn">
                     Top Songs
                 </button>
             </div>
@@ -27,6 +30,10 @@
                 </ol>
             </div>
         </div>
+    </div>
+
+    <div id="output">
+
     </div>
     
     <script src="../main.js"></script>
