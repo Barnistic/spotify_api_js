@@ -1,3 +1,4 @@
+const { time } = require('console');
 const express = require('express');
 const session = require('express-session');
 const querystring = require('querystring');
@@ -46,6 +47,8 @@ app.get('/callback', (req, res) => {
     }
     if (req.query.code) {
 
+        console.log("Callback code received.");
+
         const reqBody = {
             code: req.query.code,
             grant_type: 'authorization_code',
@@ -59,7 +62,6 @@ app.get('/callback', (req, res) => {
 
         request.post({ url: TOKEN_URL, form: reqBody, headers: reqHeader }, (error, response, body) => {
             const tokenInfo = JSON.parse(body);
-            console.log("Token info: ", tokenInfo);
             session.access_token = tokenInfo.access_token;
             session.refresh_token = tokenInfo.refresh_token;
 
@@ -81,9 +83,12 @@ app.listen(5000, () => {
     console.log('Server is running on port 5000');
 });
 
-app.get('/getSongs', (req, res) => {
-    var type = "tracks";
-    var apiUrl = API_BASE_URL + "me/top/" + type;
+app.get('/get-top-items', (req, res) => {
+    var type = req.query.type;
+    var time_range = req.query.time_range;
+
+    console.log("get-top-items call with type: " + type + " and time_range: " + time_range);
+    var apiUrl = API_BASE_URL + "me/top/" + type + "?time_range=" + time_range;
 
     request.get({
         url: apiUrl,

@@ -10,31 +10,25 @@
 </head>
 <body>
     <h1>Spotify stats</h1>
-    <div class="cover" id="cover">
-        <div class="toggle">
-            <div class="singles">
-                <button id="singles-btn" class="singles-btn">
-                    Top Songs
-                </button>
-            </div>
-            <div class="artists">
-                <button id="artists-btn" class="artists-btn" onclick="getArtists()">
-                    Top Artists
-                </button>
-            </div>
-        </div>
-        <div id="API" class="API">
-            <div class="list">
-                <ol id="list" class="results">
 
-                </ol>
-            </div>
-        </div>
-    </div>
+    <form id="top-items" action="">
+        <label for="type">Type</label>
+        <select name="type" id="type">
+            <option value="artists">Artists</option>
+            <option value="tracks">Tracks</option>
+        </select>
+        <label for="time_range">Time range</label>
+        <select name="time_range" id="time_range">
+            <option value="short_term">Short term (approx. 4 weeks)</option>
+            <option value="medium_term">Medium term (approx. 6 months)</option>
+            <option value="long_term">Long term (approx. 1 year)</option>
+        </select>
+        <button type="submit" id="submit-top-items">Submit</button>
+    </form>
 
-    <div id="output">
+    <ol id="output">
 
-    </div>
+    </ol>
     
     <script src="../main.js"></script>
 </body>
