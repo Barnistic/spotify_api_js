@@ -15,11 +15,19 @@ function sendAjaxCall(type, time_range) {
         data: { type: type, time_range: time_range},
         dataType: 'json',
         success: function (data) {
-            var list = $('#output');
-            list.empty();
-            data.items.forEach(function(entry) {
-                list.append('<li>' + entry.name + '</li>');
-            })
+            console.log(data);
+            if (data && data.tracks) {
+                var list = $('#output');
+                list.empty();
+                data.tracks.forEach(function(entry) {
+                    list.append('<li>' + entry.name + ' - Album: ' + entry.album.name + '</li>');
+                });
+                var albumsList = $('#albums');
+                albumsList.empty();
+            } else {
+                console.log("No data returned from the API");
+            }
+            
         },
         error: function(error) {
             console.log(error);

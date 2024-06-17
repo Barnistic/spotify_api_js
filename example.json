@@ -1,0 +1,265 @@
+{
+    "items": [
+        {
+            "album": {
+                "album_type": "ALBUM",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/6YVMFz59CuY7ngCxTxjpxE"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/6YVMFz59CuY7ngCxTxjpxE",
+                        "id": "6YVMFz59CuY7ngCxTxjpxE",
+                        "name": "aespa",
+                        "type": "artist",
+                        "uri": "spotify:artist:6YVMFz59CuY7ngCxTxjpxE"
+                    }
+                ],
+                "available_markets": [
+                    "AR",
+                    "XK"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/058hCti9Bupb5CJc6bd3VB"
+                },
+                "href": "https://api.spotify.com/v1/albums/058hCti9Bupb5CJc6bd3VB",
+                "id": "058hCti9Bupb5CJc6bd3VB",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b273090cfa22962b115ac530674c",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e02090cfa22962b115ac530674c",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d00004851090cfa22962b115ac530674c",
+                        "width": 64
+                    }
+                ],
+                "name": "Armageddon - The 1st Album",
+                "release_date": "2024-05-27",
+                "release_date_precision": "day",
+                "total_tracks": 10,
+                "type": "album",
+                "uri": "spotify:album:058hCti9Bupb5CJc6bd3VB"
+            },
+            "artists": [
+                {
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/artist/6YVMFz59CuY7ngCxTxjpxE"
+                    },
+                    "href": "https://api.spotify.com/v1/artists/6YVMFz59CuY7ngCxTxjpxE",
+                    "id": "6YVMFz59CuY7ngCxTxjpxE",
+                    "name": "aespa",
+                    "type": "artist",
+                    "uri": "spotify:artist:6YVMFz59CuY7ngCxTxjpxE"
+                }
+            ],
+            "available_markets": [
+                "AR",
+                "XK"
+            ],
+            "disc_number": 1,
+            "duration_ms": 178880,
+            "explicit": false,
+            "external_ids": {
+                "isrc": "KRA302400090"
+            },
+            "external_urls": {
+                "spotify": "https://open.spotify.com/track/4sgMbwl9lXGyHcHmtFYGMm"
+            },
+            "href": "https://api.spotify.com/v1/tracks/4sgMbwl9lXGyHcHmtFYGMm",
+            "id": "4sgMbwl9lXGyHcHmtFYGMm",
+            "is_local": false,
+            "name": "Supernova",
+            "popularity": 71,
+            "preview_url": "https://p.scdn.co/mp3-preview/2a36e60999a683b717f1c3136cb741b170ed410a?cid=ac741c3507aa4edc81755b589eef91e4",
+            "track_number": 1,
+            "type": "track",
+            "uri": "spotify:track:4sgMbwl9lXGyHcHmtFYGMm"
+        },
+        {
+            "album": {
+                "album_type": "ALBUM",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/25uiPmTg16RbhZWAqwLBy5"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/25uiPmTg16RbhZWAqwLBy5",
+                        "id": "25uiPmTg16RbhZWAqwLBy5",
+                        "name": "Charli xcx",
+                        "type": "artist",
+                        "uri": "spotify:artist:25uiPmTg16RbhZWAqwLBy5"
+                    }
+                ],
+                "available_markets": [
+                    "AR",
+                    "XK"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/2lIZef4lzdvZkiiCzvPKj7"
+                },
+                "href": "https://api.spotify.com/v1/albums/2lIZef4lzdvZkiiCzvPKj7",
+                "id": "2lIZef4lzdvZkiiCzvPKj7",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b27388e3822cccfb8f2832c70c2e",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e0288e3822cccfb8f2832c70c2e",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d0000485188e3822cccfb8f2832c70c2e",
+                        "width": 64
+                    }
+                ],
+                "name": "BRAT",
+                "release_date": "2024-06-07",
+                "release_date_precision": "day",
+                "total_tracks": 15,
+                "type": "album",
+                "uri": "spotify:album:2lIZef4lzdvZkiiCzvPKj7"
+            },
+            "artists": [
+                {
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/artist/25uiPmTg16RbhZWAqwLBy5"
+                    },
+                    "href": "https://api.spotify.com/v1/artists/25uiPmTg16RbhZWAqwLBy5",
+                    "id": "25uiPmTg16RbhZWAqwLBy5",
+                    "name": "Charli xcx",
+                    "type": "artist",
+                    "uri": "spotify:artist:25uiPmTg16RbhZWAqwLBy5"
+                }
+            ],
+            "available_markets": [
+                "AR",
+                "XK"
+            ],
+            "disc_number": 1,
+            "duration_ms": 133805,
+            "explicit": true,
+            "external_ids": {
+                "isrc": "USAT22401341"
+            },
+            "external_urls": {
+                "spotify": "https://open.spotify.com/track/4w2GLmK2wnioVnb5CPQeex"
+            },
+            "href": "https://api.spotify.com/v1/tracks/4w2GLmK2wnioVnb5CPQeex",
+            "id": "4w2GLmK2wnioVnb5CPQeex",
+            "is_local": false,
+            "name": "360",
+            "popularity": 73,
+            "preview_url": "https://p.scdn.co/mp3-preview/34231118fa980913824d4ccf78be931e999f69f1?cid=ac741c3507aa4edc81755b589eef91e4",
+            "track_number": 1,
+            "type": "track",
+            "uri": "spotify:track:4w2GLmK2wnioVnb5CPQeex"
+        }
+    ],
+    "total": 219,
+    "limit": 20,
+    "offset": 0,
+    "href": "https://api.spotify.com/v1/me/top/tracks?time_range=short_term",
+    "next": "https://api.spotify.com/v1/me/top/tracks?offset=20&limit=20&time_range=short_term",
+    "previous": null
+}
+
+
+{
+    "items": [
+        {
+            "external_urls": {
+                "spotify": "https://open.spotify.com/artist/25uiPmTg16RbhZWAqwLBy5"
+            },
+            "followers": {
+                "href": null,
+                "total": 3250487
+            },
+            "genres": [
+                "art pop",
+                "candy pop",
+                "metropopolis",
+                "pop",
+                "uk pop"
+            ],
+            "href": "https://api.spotify.com/v1/artists/25uiPmTg16RbhZWAqwLBy5",
+            "id": "25uiPmTg16RbhZWAqwLBy5",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab6761610000e5eb936885667ef44c306483c838",
+                    "width": 640
+                },
+                {
+                    "height": 320,
+                    "url": "https://i.scdn.co/image/ab67616100005174936885667ef44c306483c838",
+                    "width": 320
+                },
+                {
+                    "height": 160,
+                    "url": "https://i.scdn.co/image/ab6761610000f178936885667ef44c306483c838",
+                    "width": 160
+                }
+            ],
+            "name": "Charli xcx",
+            "popularity": 82,
+            "type": "artist",
+            "uri": "spotify:artist:25uiPmTg16RbhZWAqwLBy5"
+        },
+        {
+            "external_urls": {
+                "spotify": "https://open.spotify.com/artist/3YQKmKGau1PzlVlkL1iodx"
+            },
+            "followers": {
+                "href": null,
+                "total": 24252937
+            },
+            "genres": [
+                "modern rock",
+                "pop",
+                "pov: indie",
+                "rock"
+            ],
+            "href": "https://api.spotify.com/v1/artists/3YQKmKGau1PzlVlkL1iodx",
+            "id": "3YQKmKGau1PzlVlkL1iodx",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab6761610000e5eb274df4dfcb960867eccedfb5",
+                    "width": 640
+                },
+                {
+                    "height": 320,
+                    "url": "https://i.scdn.co/image/ab67616100005174274df4dfcb960867eccedfb5",
+                    "width": 320
+                },
+                {
+                    "height": 160,
+                    "url": "https://i.scdn.co/image/ab6761610000f178274df4dfcb960867eccedfb5",
+                    "width": 160
+                }
+            ],
+            "name": "Twenty One Pilots",
+            "popularity": 83,
+            "type": "artist",
+            "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+        }
+    ],
+    "total": 20,
+    "limit": 20,
+    "offset": 0,
+    "href": "https://api.spotify.com/v1/me/top/artists?time_range=short_term",
+    "next": null,
+    "previous": null
+}

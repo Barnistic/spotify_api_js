@@ -77,6 +77,7 @@ app.get('/callback', (req, res) => {
 
 app.get('/logged', (req, res) => {
     res.sendFile(__dirname + "/views/logged.html");
+    console.log("Successfull login");
 });
 
 app.listen(5000, () => {
@@ -99,7 +100,34 @@ app.get('/get-top-items', (req, res) => {
         if (error) {
             res.json({ error });
         } else {
-            res.json(JSON.parse(body));
+            var data = JSON.parse(body);
+            if (data && data.items) {
+                if (type === 'tracks') {
+                    var albumCounts = {};
+                    data.items.forEach(function(item) {
+                        var albumName = item.album.name;
+                        if (albumCounts[albumName]) {
+                            albumCounts[albumName]++;
+                        } else {
+                            albumCounts[albumName] = 1;
+                        }
+                    });
+    
+                    var topAlbums = Object.keys(albumCounts).sort(function(a, b) {
+                        return albumCounts[b] - albumCounts[a];
+                    });
+    
+                    //console.log(data);
+                    //console.log(topAlbums);
+                    var tracks = data.items;
+                    res.json({ tracks, albums: topAlbums });
+                } else {
+                    res.json(data);
+                }
+            } else {
+                res.json({ error: "No data returned from the API" });
+            }
+            
         }
     })
 });
