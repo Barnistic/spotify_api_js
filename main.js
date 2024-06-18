@@ -85,11 +85,11 @@ app.listen(5000, () => {
 });
 
 app.get('/get-top-items', (req, res) => {
-    var type = req.query.type;
-    var time_range = req.query.time_range;
+    const type = req.query.type;
+    const time_range = req.query.time_range;
 
     console.log("get-top-items call with type: " + type + " and time_range: " + time_range);
-    var apiUrl = API_BASE_URL + "me/top/" + type + "?time_range=" + time_range;
+    const apiUrl = API_BASE_URL + "me/top/" + type + "?time_range=" + time_range;
 
     request.get({
         url: apiUrl,
@@ -100,12 +100,12 @@ app.get('/get-top-items', (req, res) => {
         if (error) {
             res.json({ error });
         } else {
-            var data = JSON.parse(body);
-            if (data && data.items) {
+            let data = JSON.parse(body);
+            if (data?.items) {
                 if (type === 'tracks') {
-                    var albumCounts = {};
+                    let albumCounts = {};
                     data.items.forEach(function(item) {
-                        var albumName = item.album.name;
+                        const albumName = item.album.name;
                         if (albumCounts[albumName]) {
                             albumCounts[albumName]++;
                         } else {
@@ -113,13 +113,11 @@ app.get('/get-top-items', (req, res) => {
                         }
                     });
     
-                    var topAlbums = Object.keys(albumCounts).sort(function(a, b) {
+                    let topAlbums = Object.keys(albumCounts).sort(function(a, b) {
                         return albumCounts[b] - albumCounts[a];
                     });
     
-                    //console.log(data);
-                    //console.log(topAlbums);
-                    var tracks = data.items;
+                    const tracks = data.items;
                     res.json({ tracks, albums: topAlbums });
                 } else {
                     res.json(data);
