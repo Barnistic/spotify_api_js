@@ -1,4 +1,7 @@
 $(document).ready(function() {
+    $('#login').click(function(e) {
+        window.location.href = '/login';
+    });
     $('#top-items').submit(function(event) {
         event.preventDefault();
 

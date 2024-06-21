@@ -1,4 +1,5 @@
 const { time } = require('console');
+const path = require('path');
 const express = require('express');
 const session = require('express-session');
 const querystring = require('querystring');
@@ -22,11 +23,9 @@ app.use(session({
     saveUninitialized: true
 }));
 
-app.use(express.static(__dirname));
+app.use(express.static(path.join(__dirname, '/views')));
 
-app.get('/', (req, res) =>{
-    res.send("Welcome to my Spotify app <a href='/login'>Login with Spotify</a>");
-});
+app.use('/client.js', express.static(path.join(__dirname, 'client.js')));
 
 app.get('/login', (req, res) => {
     const scope = 'user-read-private user-read-email user-top-read';
