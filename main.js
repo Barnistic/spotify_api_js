@@ -115,10 +115,15 @@ app.get('/get-top-items', (req, res) => {
     
                     let topAlbums = Object.keys(albumCounts).sort(function(a, b) {
                         return albumCounts[b] - albumCounts[a];
+                    }).map(function(albumName) {
+                        return { name: albumName, count: albumCounts[albumName] };
                     });
     
                     const tracks = data.items;
                     res.json({ tracks, albums: topAlbums });
+                } else if (type === 'artists') {
+                    const artists = data.items;
+                    res.json({ artists });
                 } else {
                     res.json(data);
                 }

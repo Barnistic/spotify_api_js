@@ -24,6 +24,15 @@ function sendAjaxCall(type, time_range) {
                 });
                 const albumsList = $('#albums');
                 albumsList.empty();
+                data.albums.forEach(function(album) {
+                    albumsList.append('<li>' + album.name + ': ' + album.count + ' times</li>');
+                });
+            } else if (data?.artists) {
+                const list = $('#output');
+                list.empty();
+                data.artists.forEach(function(entry) {
+                    list.append('<li>' + entry.name + '</li>');
+                });
             } else {
                 console.log("No data returned from the API");
             }
