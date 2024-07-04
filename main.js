@@ -88,7 +88,7 @@ app.get('/get-top-items', (req, res) => {
     const time_range = req.query.time_range;
 
     console.log("get-top-items call with type: " + type + " and time_range: " + time_range);
-    const apiUrl = API_BASE_URL + "me/top/" + type + "?time_range=" + time_range;
+    const apiUrl = API_BASE_URL + "me/top/" + type + "?limit=50&time_range=" + time_range;
 
     request.get({
         url: apiUrl,
