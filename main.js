@@ -24,6 +24,7 @@ app.use(session({
 }));
 
 app.use(express.static(path.join(__dirname, '/views')));
+app.use(express.static(path.join(__dirname, '.')));
 
 app.use('/client.js', express.static(path.join(__dirname, 'client.js')));
 
